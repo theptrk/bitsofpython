@@ -2,9 +2,12 @@
 - @returns: <range> immutable sequence of numbers
 
 # why range is awesome
-unlike list and tuple, range returns the same amount of memory since it only
+
+Unlike list and tuple, range returns the same amount of memory since it only
 represents the start, stop and step values, calculating the individual values
 and subranges as needed
+
+[range](https://docs.python.org/3/library/stdtypes.html#range)
 
 ```python
 # >>> range(5)
