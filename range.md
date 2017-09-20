@@ -1,5 +1,5 @@
 - @name: range 
-- @returns: <range> immutable sequence of numbers
+- @returns: <range> immutable sequence of numbers as an "iterator"
 
 # why range is awesome
 
@@ -9,6 +9,7 @@ and subranges as needed
 
 [range](https://docs.python.org/3/library/stdtypes.html#range)
 
+## docs
 ```python
 # >>> range(5)
 [0,1,2,3,4]
@@ -20,7 +21,35 @@ range(stop)
 # @signatures: #2
 range(start, stop[, step])
 # where step defaults to 1
+```
 
+## use cases
+```python
+# we use these for looping
+>>> for i in range(6):
+...     print(i)
+0
+1
+2
+3
+4
+5
+
+# we can loop over a list with range
+>>> my_list = ['one', 'two', 'three', 'four', 'five']
+>>> my_list_len = len(my_list)
+>>> for i in range(0, my_list_len):
+...     print(my_list[i])
+... 
+one
+two
+three
+four
+five
+```
+
+## examples
+```python
 # >>> list(range(5))
 [0, 1, 2, 3, 4]
 # >>> list(range(1, 5))
@@ -36,4 +65,3 @@ range(start, stop[, step])
 # >>> list(range(1, 0))
 []
 ```
-
