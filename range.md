@@ -35,17 +35,29 @@ range(start, stop[, step])
 4
 5
 
-# we can loop over a list with range
->>> my_list = ['one', 'two', 'three', 'four', 'five']
->>> my_list_len = len(my_list)
->>> for i in range(0, my_list_len):
-...     print(my_list[i])
+# we can loop over a len(list) with range
+>>> numbers = ['one', 'two', 'three', 'four', 'five']
+>>> for i in range(0, len(numbers)):
+...     print(numbers[i])
 ... 
 one
 two
 three
 four
 five
+
+# we can nest to loop over list, then loop over items
+>>> list = ['a', 'bb', 'ccc']
+>>> for word in list:
+...     for letter in word:
+...             print(letter)
+...
+a
+b
+b
+c
+c
+c
 ```
 
 ## examples
