@@ -9,6 +9,8 @@ haskell + ruby like list comprehensions!
 ```python
 # @signatures: #1
 [<operator expression> for <i> in <list> [if <expression>]]
+
+[docs](https://docs.python.org/3/tutorial/datastructures.html)
 ```
 
 ## basic list comprehension
@@ -22,8 +24,7 @@ haskell + ruby like list comprehensions!
 ...     y.append(num**2)
  
 # with list comprehension
->>> [num**2 for num in x]
-```
+>>> [num**2 for num in x] ```
 
 ## list comprehension with predicate
 ```python
@@ -59,4 +60,26 @@ flattened = [
     for row in matrix
     for n in row
 ]
+```
+
+## double for different lists
+
+```python
+# this returns a list of tuples if the corresponding items are not equal
+[(x,y) for x in [1,2,3] for y in [3,1,4] if x !=y]
+```
+
+## dont try this at home: transposing a matrix
+```python
+matrix = [
+    [1,2,3,4],
+    [5,6,7,8],
+    [9,10,11,12]
+]
+[[row[i] for row in matrix] for i in range(4)]
+
+# which is the same as zip
+list(zip(*matrix))
+
+# see unpacking argument lists for the * explanation
 ```
