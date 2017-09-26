@@ -1,20 +1,44 @@
-## lists unpacked with *
+# lists unpacked with *
 ```python
 # we got this
-list(range(3,6))
+>>> def add(a, b):
+...     return a + b
+...
 
 # but say we have this args list and want to use it for "range"
-args = [3,6]
+>>> addTheseNumbers = [3,5]
 
-# * to unpack
-list(range(*args))
+>>> add(addTheseNumbers);
+
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+TypeError: add() missing 1 required positional argument: 'b'
+
+# we need to use * to unpack lists
+>>> add(*addTheseNumbers)
+8
+
 ```
 
-## dictionaries unpacked with **
+# dictionaries unpacked with **
 ```python
-def parrot(state="california", color="blue"):
-    print("this {} parrot is from {}".format(color, state)
+>>> def greet(name, origin):
+...     return "Hello {} from {}!".format(name, origin)
+...
 
-details = {"state": "hawaii", "color": "blue"}
-parrot(**details)
+>> me = {"name": "Patrick", "origin": "San Francisco"}
+
+# incorrect no unpacking
+>> greet(me)
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+TypeError: greet() missing 1 required positional argument: 'origin'
+
+# incorrect unpacking with * on dictionary
+>> greet(*me)
+'Hello name from origin'
+
+# correct dictionary unpacking with **
+>> greet(**me)
+'Hello Patrick from San Francisco'
 ```
