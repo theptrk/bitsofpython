@@ -1,0 +1,28 @@
+# how to
+# [ ] install python>=3.4, git, virtualenv
+# [ ] virtualenv env -p `which python3`
+# [ ] source ./env/bin/activate
+# [ ] pip install -r data-science-requirements.txt
+
+# notebook core tech
+ipython
+jupyter==1.0.0
+
+# numerical python
+numpy==1.13.1
+
+# panel data python
+pandas==0.20.3
+
+# matlib python
+matplotlib==2.0.2
+
+# visual powerups
+seaborn==0.8.1
+
+# data science powerup
+statsmodels
+
+# data in/out
+pandas_datareader
+quandl
