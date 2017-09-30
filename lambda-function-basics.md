@@ -24,3 +24,15 @@ list(map(lambda num:num*2, seq))
 # get a list of even "seq" items
 list(filter(lambda num:num%2 == 0, seq))
 ```
+
+# reduce with lambdas
+```python
+from functools import reduce
+
+# reduce takes a lambda
+# >>> reduce((lambda x, y: x * y), [1,2,3,4])
+24
+
+# >>> reduce((lambda x, y: x + y), [1,2,3,4])
+10
+```
