@@ -29,6 +29,17 @@ true
 
 # >>> 5 in x
 false
+
+# >>> x.add(5)
+
+# >>> 5 in x
+true
+
+# >>> x.update([6,7,8])
+
+# >>> 7 in x
+true
+
 ```
 
 ## examples
