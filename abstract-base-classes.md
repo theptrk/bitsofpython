@@ -61,6 +61,6 @@ Sequence.register(str)
 Sequence.register(range)
 # ...
 ```
-sources:
-[thedigitalcatonline](http://blog.thedigitalcatonline.com/blog/2016/04/03/abstract-base-classes-in-python/)
-[python docs](https://docs.python.org/3/library/abc.html)
+#### sources:
+- [thedigitalcatonline](http://blog.thedigitalcatonline.com/blog/2016/04/03/abstract-base-classes-in-python/)
+- [python docs](https://docs.python.org/3/library/abc.html)
