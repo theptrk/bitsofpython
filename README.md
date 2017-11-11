@@ -14,7 +14,7 @@ brew install virtualenv
 
 Create a virtualenv called "env"
 ```
-virtualenv -p `which python3`
+virtualenv env -p `which python3`
 ```
 
 Activate your new environment
