@@ -13,12 +13,10 @@
 ## use cases
 ```python
 # count by key using "Counter"
+from collections import Counter
+
 def count_by_key(data, key):
-    from collections import Counter
-    c = Counter()
-    for line in data:
-        c[line[key].lower()] += 1
-    return c
+    return Counter([x[key] for x in data])
 ```
 
 ## examples
