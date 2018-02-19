@@ -36,3 +36,17 @@ only_certain_lines = [line for line in dicts
 ```python
 sum_subtotal = sum(float(line["Subtotal"]) for line in only_certain_lines)
 ```
+
+[ ] use a Counter object to count things
+```python
+from collections import Counter
+
+# here we will some the "Subtotal" fields by "Shipping City"
+my_counter = Counter()
+for line in only_certain_lines:
+    my_counter[line["Shipping City"].title()] += float(line["Subtotal"])
+    
+# print the subtotals of the line items
+for x,y in dict(city_count).items():
+    print(f'{x} : ${round(y,2)}')
+```
