@@ -1,16 +1,10 @@
 # bits of python (3)
 
-Install homebrew: [https://brew.sh/]
+## how to set up python on a dev environment
 
-Install Python3:
-```
-brew install python3
-```
-
-Install virtualenv:
-```
-brew install virtualenv
-```
+- [ ] Install homebrew: [https://brew.sh/]
+- [ ] Install Python3: `brew install python3`
+- [ ] Install virtualenv: `brew install virtualenv`
 
 Create a virtualenv called "env"
 ```
