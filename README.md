@@ -5,7 +5,7 @@
 - [ ] Install homebrew: [https://brew.sh/]
 - [ ] Install Python3: `$ brew install python3`
 - [ ] Install virtualenv: `$ brew install virtualenv`
-- [ ] Create a virtualenv called "env" `jsadjfsakfs (`)kale(`)`
+- [ ] Create a virtualenv called "env" ``jsadjfsakfs `kale` ``
 ```
 virtualenv env -p `which python3`
 ```
