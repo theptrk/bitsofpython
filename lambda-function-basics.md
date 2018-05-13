@@ -9,7 +9,7 @@ def add(a, b):
 # step 1: delete "def", function name and whitespace
 # >>> (a, b): return a + b
 
-# step 2: delete return
+# step 2: delete return since its implied
 # >>> (a, b): a + b
 
 # step 3: add "lambda" and now you have a lambda function
@@ -18,6 +18,11 @@ lambda a, b: a + b
 # test drive
 # >>> (lambda a, b: a + b)(10, 20)
 # 30
+
+# you can assign lambdas to variables although most people will tell you that
+# you should use def instead - data science from scratch p18
+double = lambda x: 2 * x     # dont do this
+def double(x): return 2* x   # do this instead
 ```
 
 # map and filter with lambdas
