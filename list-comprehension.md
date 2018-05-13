@@ -40,26 +40,31 @@ haskell + ruby like list comprehensions!
 
 ## nested loop behavior
 ```python
-# imagine you want to flatten a matrix
+# goal: flatten a matrix
+matrix = [
+    [1, 2, 3],
+    [4, 5, 6],
+    [7, 8, 9],
+]
 
-# here is what it looks like with a for loop
+# for loop method: 
 flattened = []
 for row in matrix:
     for n in row:
         flattened.append(n)
 
-# you sort of flatten the structure, here is the same code on one line
-# flattened = [] for row in matrix:for n in row:flattened.append(n)
-
-# here is the equivalent list comprehension
+# list comprehension method: 
 flattened = [n for row in matrix for n in row]
 
-# note that python allows line breaks, so this is the same
+# note: python allows line breaks, so this is the same
 flattened = [
     n
     for row in matrix
     for n in row
 ]
+
+# note: if statements work after the `for in`
+flattenedOver5 = [n for row in matrix for n in row if n > 5]
 ```
 
 ## double for different lists
