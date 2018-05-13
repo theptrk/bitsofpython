@@ -54,6 +54,7 @@ for row in matrix:
         flattened.append(n)
 
 # list comprehension method: 
+# note: later `for`s can use the results of earlier ones
 flattened = [n for row in matrix for n in row]
 
 # note: python allows line breaks, so this is the same
@@ -72,6 +73,21 @@ flattenedOver5 = [n for row in matrix for n in row if n > 5]
 ```python
 # this returns a list of tuples if the corresponding items are not equal
 [(x,y) for x in [1,2,3] for y in [3,1,4] if x !=y]
+```
+
+## to dict and set
+```python
+# dict
+square_dict = { x: x * x in range(5)]
+
+# set
+square_set =  { x * x in range(5)]
+```
+
+## convention: use _ when ignoring the value
+```python
+import random
+four_uniform_randoms = [random.random() for _ in range(4)]
 ```
 
 ## dont try this at home: transposing a matrix
