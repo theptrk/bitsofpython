@@ -11,7 +11,7 @@ that registered it, and nowhere in the subclass will you find something that
 links it to the parent class. *Thus, a virtual parent class is useful only as a
 categorization*
 
-- mro()? No. ABCs will not be represented in a classes MRO.
+- mro()? No. ABCs will not be represented in a class' MRO.
 
 ## how to break the agreement
 ```python
